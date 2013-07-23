@@ -16,7 +16,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'duranjobasic_db',                      # Or path to database file if using sqlite3.
+        'NAME': 'sipreca_base',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': 'duranjo',
         'PASSWORD': 'Emprendimiento_2013',
@@ -174,6 +174,6 @@ TEMPLATE_CONTEXT_PROCESSOR = (
 #Configuraciones para enviar mensajes usando gmail
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = '*@gmail.com'
-EMAIL_HOST_PASSWORD = '*'
+EMAIL_HOST_USER = 'duranjoweb@gmail.com'
+EMAIL_HOST_PASSWORD = 'comovosquerais'
 EMAIL_POST = 587
