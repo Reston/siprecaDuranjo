@@ -1,0 +1,122 @@
+@charset 'utf-8';
+.barra div span{
+	display: block;
+	width: 100%
+}
+.acercaTitulo, .servicioTitulo{
+	text-align: center;
+}
+.info{
+	display: inline-block;
+	width: 20%;
+	vertical-align: top;
+	margin-top: 50px;
+}
+/* BANNER */
+.bannerPrincipal{
+	height: 450px;
+	background: url(../../img/patronVerde.jpg);
+}
+/* Acerca de sección */
+.acercade{
+	padding: 50px 0;
+}
+.acercaTitulo {
+	color: #C63;
+	font-size: 2.2em;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.acercade p{
+	text-align: center;
+	font-size: 1.5em;
+}
+.servicioTitulo{
+	color: #660066;
+}
+.barrasCosas{
+	font-size: 0;
+}
+.barra{
+	font-size: 28px;
+	text-align: center;
+	color: white;	
+}
+.barra span{
+	font-size: 0.45em;
+}
+.barra div{
+	margin-bottom: 25px;
+	margin-top: 15px;
+}
+.barramedio div{
+	margin-bottom: 50px;
+	margin-top: 30px;
+}
+.barrasCosas .barra:first-child{
+	background: #CC6633;
+}
+.barrasCosas .barra:last-child{
+	background: #339966;
+}
+.barrasCosas .barra{
+	background: #660066;
+	width: 33%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+/* Servicios */ 
+.servicios{
+	margin-bottom: 20px;
+}
+.cajaServicios{
+	background: #F1F1F1;
+}
+.servicioTitulo{
+	margin: 0;
+	padding: 20px 0;
+	font-size: 2.2em;
+	text-transform: uppercase;
+	font-weight: normal;
+
+}
+.tipoServicio{
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+}
+
+.tipoServicio ul li{
+	display: inline-block;
+	width: 49%;
+}
+/* Obras */
+.obrasRecientes{
+	margin-bottom: 20px;
+}
+.obrasRecientes .wrapper{
+	border-top: 2px solid #CCCCCC;
+}
+.listaClientes, .ultimasObras{
+	display: inline-block;
+	width: 79%;
+	margin-top: 50px;
+}
+.obra{
+	display: inline-block;
+	width: 30%;
+}
+.tituloObra{
+	text-align: center;
+	font-weight: bold;
+}
+/* Clientes */
+.clientes{
+	margin-bottom: 50px;
+}
+.clientes .wrapper{
+	border-top: 2px solid #CCCCCC;
+}
+.listaClientes a{
+	text-decoration: none;
+}

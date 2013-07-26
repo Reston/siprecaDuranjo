@@ -5,58 +5,116 @@
 <meta name="description" content="">
 {% endblock%}
 {% block title %}
-Duranjo Web
+Sipreca - Página principal.
 {% endblock%}
 {% block css%}
-<link rel="stylesheet" href="{{ STATIC_URL }}css/index.css">
+<link rel="stylesheet" href="{{ STATIC_URL }}css/homepage/index.css">
 {% endblock %}
 {% block js %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/back-top.js"></script>
 {% endblock %}
-{% block navi %}
-		<ul>
-			<li class="index"><a href="{% url 'homepageindex' %}">Inicio</a></li>
-			<li class="works"><a href="{% url 'homepageworks' %}">Trabajos</a></li>
-			<li class="services"><a href="{% url 'homepageservices' %}">Servicios</a></li>
-			<li class="contact"><a href="{% url 'homapagecontact' %}">Contacto</a></li>
-		</ul>				
+{% block navi %}			
 {% endblock %}
 {% block clear %}{% endblock%}
 {% block contenido %}
 	<section class="bannerPrincipal">
-		<h1>Titulo importante</h1>
 		<div class="wrapper banner1">
 		</div>
 	</section>
-	<section class="ofrecemos">		
+	<section class="acercade">
+		<div class="wrapper">
+			<h2 class="acercaTitulo">Sobre sipreca</h2>
+			<p>La mayoría de nuestros obras han sido I.P.C. (Ingeniería, procura y construcción), ejecutados por un grupo de ingenieros, arquitectos y técnicos metalúrgicos con más de 30 años de experiencia en el ramo. Nuestra experiencia está demostrada con:</p>
+			<div class="barrasCosas">
+				<div class="barra">
+					<div>750.500 m²<span>De galpones industriales.</span></div>
+					<div>6 PASS-WAY<span>Colectores de circulación para pasajeros.</span></div>
+					<div>80.000 m²<span>De galpones industriales.</span></div>
+				</div>
+				<div class="barra barramedio">					
+					<div>80.000 m²<span>De áreas deportivas.</span></div>
+					<div>185 Trailers<span>Para oficinas y viviendas para la industria petrolera.</span></div>
+					<div>51.000 m²<span>Contrucción en dos centros comerciales.</span></div>
+				</div>
+				<div class="barra">
+					<div>28.000 t<span>Componentes de acero pesado para la industria petrolera.</span></div>
+					<div>2.220.000 m²<span>Lámina tipo Superluz 960 y tipo extrancha 1050.</span></div>
+					<div>75.000 m²<span>Estructura para mallas especiales.</span></div>
+					
+				</div>
+			</div>
+		</div>	
 	</section>
-	<section class="aboutus">		
+	<section class="servicios">
+		<div class="wrapper">
+			<div class="cajaServicios">
+				<h2 class="servicioTitulo">Servicios</h2>
+				<section class="tipoServicio">
+					<h3>Construcción de obras civiles</h3>
+					<ul>
+						<li>• Instalación de todo tipo de estructuras metálicas.</li>
+						<li>• Edificaciones urbanas y rurales.</li>						
+						<li>• Viviendas.</li>
+						<li>• Galpones.</li>
+						<li>• Puentes.</li>
+						<li>• Rieles de ferrocarril</li>
+					</ul>
+				</section>
+				<section class="tipoServicio">
+					<h3>Productos estructurales</h3>
+					<ul>
+						<li>• Láminas para cubiertas de techo.</li>
+						<li>• Cerramientos de acero o aluminio.</li>
+						<li>• Perfiles.</li>
+						<li>• Entrepisos.</li>
+					</ul>
+				</section>
+			</div>
+		</div>	
 	</section>
-	<section class="infoContacto">
+	<section class="obrasRecientes">
+		<div class="wrapper">
+			<div class="info">
+				Obras recientes
+				blablabala
+				ver todos
+			</div>
+			<div class="ultimasObras">
+				<!-- Mientras tanto -->
+				<div class="obra">
+					<img src="{% static 'img/sobre.png' %}" alt="sobre" style="width: 220px;">
+					<div class="tituloObra">Sobre de cosas</div>
+				</div>
+				<div class="obra">
+					<img src="{% static 'img/sobre.png' %}" alt="sobre" style="width: 220px;">
+					<div class="tituloObra">Sobre de cosas</div>
+				</div>
+				<div class="obra">
+					<img src="{% static 'img/sobre.png' %}" alt="sobre" style="width: 220px;">
+					<div class="tituloObra">Sobre de cosas</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="clientes">
+		<div class="wrapper">
+			<div class="info">
+				Clientes
+				blablabala
+				blabala
+			</div>
+			<div class="listaClientes">
+				</a>
+				<a href="" target="_blank" rel="nofollow" title="logo1" class="sponsor">
+					<img src="{% static 'img/logoejemplo.png' %}" alt="logo1">
+				</a>
+				<a href="" target="_blank" rel="nofollow" title="logo2" class="sponsor">
+					<img src="{% static 'img/logoejemplo.png' %}" alt="logo2">
+				</a>
+			</div>
+		</div>
 	</section>	
-	<!-- Google+ SCRIPT --> 
-		<!-- Place this tag after the last badge tag. -->
-		<script  async type="text/javascript">
-		 window.___gcfg = {lang: 'es-419'};
-		 (function() {
-		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-		   po.src = 'https://apis.google.com/js/plusone.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-		  })();
-		</script>
-	<!-- FACEBOOK SCRIPT -->
-			<div id="fb-root"></div>
-		<script async>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-	<!-- TWITTER SCRIPT -->
-	<script async>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-	
 	<!-- BACK TOP BOX -->
 	<div id="back-top" class="back-top">
 		<a href="#home"><span>↑</span>Regresar arriba</a>

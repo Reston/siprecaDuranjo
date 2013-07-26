@@ -13,7 +13,7 @@ urlpatterns = patterns(
 	# Examples:
 	# url(r'^$', 'siprecaDuranjo.views.home', name='home'),
 	# url(r'^siprecaDuranjo/', include('siprecaDuranjo.foo.urls')),
-
+	url(r'^', include('siprecaDuranjo.apps.homepage.urls')),
 	# Uncomment the admin/doc line below to enable admin documentation:
 	# url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 

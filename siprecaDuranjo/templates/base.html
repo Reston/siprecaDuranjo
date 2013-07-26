@@ -8,14 +8,16 @@
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/PIE.js"></script>
 <![endif]-->
-<meta name="keywords" content="Diseño Web,Software,Gráfico,Páginas web,Venezuela,Maracaibo,Presupuesto,Planes, sitio web">
-<meta name="author" content="José Ordoñez, Diana Chavez y Elibeth Quiñones">
+<meta name="keywords" content="*">
+<meta name="author" content="Duranjo Web C.A.">
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 {% block head %} {% endblock%}
 <link rel="shortcut icon" type="image/x-icon" href="{{ STATIC_URL }}img/favicon.ico">
 <title>{% block title %} {% endblock%}</title>
-<link rel="stylesheet" href="{{ STATIC_URL }}css/normalize.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
 {% block css %}
 {% endblock %}
 {% block js %}
@@ -33,9 +35,20 @@
 	  ga('send', 'pageview');
 	</script> -->
 	<header id="home" class="cabecera">
-		<div class="wrapper">				
+		<div class="wrapper">
+			<div class="logoNombre">
+				<img src="" alt="logo de sipreca">
+				<h1>Sistemas prefabricados ecológicos</h1>
+			</div>
 			<nav class="barraNavegacion">
-				{% block navi %} {% endblock%}
+				<ul>
+					<li class="index"><a href="{% url 'homepageindex' %}">Inicio</a></li>
+					<li class="works"><a href="{% url 'homepageabout' %}">Quienes somos</a></li>
+					<li class="services"><a href="{% url 'homepageobras' %}">Obras</a></li>
+					<li class="contact"><a href="{% url 'homapagecontact' %}">Contacto</a></li>
+				</ul>	
+				{% block navi %} 
+				{% endblock%}
 			</nav>
 		</div>
 	</header>
@@ -46,11 +59,37 @@
 	<footer>
 		{% block footer %}{% endblock%}
 		<div class="wrapper">
-			<div class="footer-der">
+			<div class="footerSection">
+				<ul>
+					<li class="index"><a href="{% url 'homepageindex' %}">Inicio</a></li>
+					<li class="works"><a href="{% url 'homepageabout' %}">¿Quienes somos?</a></li>
+					<li class="services"><a href="{% url 'homepageobras' %}">Obras</a></li>
+					<li class="contact"><a href="{% url 'homapagecontact' %}">Contacto</a></li>
+				</ul>
 			</div>
-			<div class="footer-izq">
-			</div>		  
+			<div class="footerSection">
+				<div class="telefono"></div>
+				<ul class="telefonosLista">
+					<li>(+58) 261 7577677</li>
+					<li>(+58) 261 7579510</li>
+					<li>(+58) 261 7572902</li>
+				</ul>
+			</div>
+			<div class="footerSection">
+				<div class="correo"></div>
+				contacto@sipreca.com
+			</div>
+			<div class="footerSection">
+				<div class="direccion"></div>
+				Maracaibo-Estado Zulia, Venezuela.
+			</div>
+			<div class="footerSection">
+				Sipreca
+				Duranjo
+				Tecno usada
+			</div>  
 		</div>
+		<div class="copyright">Copyright 2013 - Todos los derechos reservados.</div>
 	</footer>
 </body>
 </html>

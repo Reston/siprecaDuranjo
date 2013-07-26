@@ -1,1 +1,153 @@
 @charset 'utf-8';
+body{
+	margin: 0;
+	font-family: 'Roboto', helvetica;
+}
+h1{
+	color: #BFBFBF;
+	font-size: 16px;
+	font-weight: normal;
+}
+h3{
+	text-align: center;
+}
+img{
+	width: auto;
+	height: auto;
+}
+.wrapper{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto 0 auto;
+}
+header{
+	border-bottom: 15px solid #EEEEEE;
+}
+.logoNombre{
+	display: inline-block;
+	width: 49%;
+}
+/* NAVEGATION */
+nav{
+	text-align: right;
+	display: inline-block;
+	width: 49%
+}
+nav ul li{
+	display: inline-block;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+nav a{
+	color: black;
+	padding: 0 15px;
+	text-decoration: none;
+	border-left: 2px solid white
+}
+nav a:hover{
+	color: red;
+}
+nav li:first-child a{
+	border-left: none;
+}
+/* footer*/
+footer{
+	background: url(../img/patronMorado.jpg);
+	color: white;
+	padding: 50px 0;
+}
+.footerSection{
+	display: inline-block;
+	width: 19%;
+	text-align: center;
+	vertical-align: top;
+}
+.footerSection:first-child{
+	text-align: left;
+}
+.footerSection ul{
+	list-style: none;
+	padding: 0;
+	font-size: 1.2em;
+}
+.footerSection li {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.telefonosLista li{
+	margin: 5px;
+}
+.footerSection li a {
+	text-decoration: none;
+	color: #FFF;
+}
+.copyright{
+	text-align: center;
+}
+.telefono{
+	background: url(../img/iconosfooter.png) no-repeat 0 0;
+	width: 46px;
+	height: 136px;
+	margin: 0 auto;
+}
+.correo{
+background: url(../img/iconosfooter.png) no-repeat -46px 0;
+width: 132px;
+height: 136px;
+margin: 0 auto;
+}
+.direccion{
+	background: url(../img/iconosfooter.png) no-repeat -177px 0;
+	width: 100px;
+	height: 136px;
+	margin: 0 auto;
+}
+/* Configuración back to top button */
+
+.back-top {
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	z-index: 1;
+}
+
+.back-top a {
+	width: 108px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+.back-top a:hover {
+	color: #000;
+}
+
+	/* arrow icon (span tag) */
+.back-top span {
+	width: 70px;
+	height: 70px;
+	display: block;
+	margin: 0 auto 7px auto;
+	font-size: 0;
+	background: #589771 url(../img/up-arrow.png) no-repeat center center;
+
+	/* rounded corners */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+.back-top a:hover span {
+	background-color: #777;
+}
