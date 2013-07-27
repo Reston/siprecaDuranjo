@@ -2,8 +2,9 @@
 {% block title %}
 Trabajos realizados - Duranjo
 {% endblock %}
+{% load staticfiles %}
 {% block css %}
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/quienesomos.css">
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/homepage/quienesomos.css">
 {% endblock %}
 {% block js %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
@@ -11,7 +12,40 @@ Trabajos realizados - Duranjo
 {% block contenido %}
 <section class="quienessomos">
 	<div class="wrapper">
-		<div class="tituloStyle"><h2>¿Quienes somos?</h2></div>
+		<div class="tituloAbout"><h2>¿Quienes somos?</h2></div>
+		<div class="parteI">
+				<p><b>Misión: </b>Somos una Empresa comprometida con el desarrollo de la actividad de construcción en Venezuela, cuya razón de ser es aportar y entregar soluciones a través de sistemas de construcción eficientes y efectivos en su aplicación, fabricación, e instalación que permitan resolver funcional, espacial, financiera y cronológicamente cualquier requerimiento de nuestros clientes, cumpliendo cualitativa y cuantitativamente con las metas propuestas y establecidas por estos en nuestras contrataciones.</p>
+				<p><b>Visión: </b>Consolidarnos como una empresa rentable, emblematica y reconocida en el ámbito de la construcción de estructuras modulares y de acero, así como también destacar como oferentes de servicios al constructor y público general aportando soluciones novedosas, sustentables y financieramente satisfactorias para todas las partes involucradas.</p>
+				<p><b>Objetivo Social: </b>Resaltamos el compromiso de servir a toda la colectividad en general, cualquiera sea el alcance del trabajo o compromiso, destacando los aspectos de minimización de costos y aplicación de técnicas que impliquen efectividad y mejoramiento de los cronogramas operativos, que optimicen los recursos.</p>
+		</div>
+		<div class="imagenabout">
+			<div class="cuadro naranja"></div>
+			<div class="cuadro verde"></div>
+			<div class="lineamorada"></div>
+			<img src="{% static 'img/sobre.png' %}" alt="sobre">
+			<div class="cuadro naranja"></div>
+			<div class="cuadro verde"></div>
+			<div class="lineamorada"></div>			
+		</div>
+		<div class="tituloAbout aladerecha"><h2>¿Por qué somos su mejor opción?</h2></div>
+		<div class="imagenabout">
+			<div class="cuadro naranja"></div>
+			<div class="cuadro verde"></div>
+			<div class="lineamorada"></div>
+			<img src="{% static 'img/sobre.png' %}" alt="sobre">
+			<div class="cuadro naranja"></div>
+			<div class="cuadro verde"></div>
+			<div class="lineamorada"></div>			
+		</div>
+		<ul class="listabout">
+			<li>Nuestra experiencia a través de los años, nos han demostrado que podemos ofrecer garantía sobre las láminas por más de  30 años, ya que construcciones industriales con data de 40 años hablan por si solas.</li>                    
+			<li>El ancho útil que ofrece la lamina tipo Extrancha es el mayor que ofrece el mercado nacional.</li>                    
+			<li>La altura que ofrece la lámina tipo Superluz es la mayor del mercado la cual permite caminar sobre ella sin ningún riesgo de deformación.</li>
+			<li>Por ser fabricantes, podemos ofrecer láminas con las longitudes que requiera el diseño, lo cual minimiza la cantidad de solapes, que hacen vulnerables este tipo de cubiertas.</li>
+			<li>Las luces que cubren estas láminas permiten libertad a la hora de diseñar ya que requieren menos estructura de soporte.</li>
+			<li>Nuestras laminas aparte del acabado de aluminio tipo Stucco, puede aplicársele pintura de manera que armonice con el diseño o pueda usarse como reflectante de los rayos solares.</li>
+		</ul>                                                	
+
 	</div>
 </section>
 {% endblock%}
