@@ -1,0 +1,75 @@
+@charset 'utf-8';
+.tituloStyle{
+	text-align: center;
+}
+.map{
+	height: 375px
+}
+#map-canvas { height: 100% }
+
+.izquierda, .derecha{
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+}
+.campo {
+	margin: 0 auto 10px auto;
+}
+.campo label {
+	display: block;
+	margin-bottom: 3px;
+}
+.campo input{
+	text-indent: 5px;
+	height: 33px;
+	width: 84%;
+}
+.textareaDescripcion label{
+	display: block;
+	margin-bottom: 3px;
+}
+textarea{
+	width: 84%;
+}
+input[type="submit"]{
+	background: #444;
+	border: none;
+	color: #FFF;
+	padding: 10px 50px;
+}
+.botonEnviar{
+	margin-top: 25px;
+}
+.errorlist {
+	border: 1px solid #F00;
+	background: #FFC0CB;
+	color: #F00;
+	list-style: none;
+	margin: 10px 0;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	width: 82%;
+	text-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+	padding: 10px 0 10px 2%;
+}
+
+/* DETALLES */
+
+.textoIzq{
+	text-align: left;
+}
+
+.textoIzq h2{
+	border-bottom: 2px solid #CDCDCD;
+}
+.izquierda span{
+	font-weight: bold;
+}
+.derecha span{
+	text-align: center;
+	font-weight: bold;
+	display: block;
+}
+.telefonosLista{
+	margin: 0;
+}
